@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  padding: 25px 0;
+  position: fixed;
+  transition: .3s;
+  top: 0;
+  z-index: 999;
+}
+
+.sticky {
+  background: #fff;
+  padding: 18px 0;
+}
+
+.sticky .navbar-menu a {
+  color: black;
+
+}
+
+.width {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.navbar .width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo {
+  width: 44px;
+  height: 32px;
+  background-image: url("");
+  background-size: contain;
+}
+
+.menu-toggler {
+  width: 30px;
+  border: none;
+  position: relative;
+  background: none;
+  z-index: 999;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-toggler span {
+  height: 3px;
+  margin: 6px 0;
+  display: block;
+  position: relative;
+  transition: .3s linear;
+  background-color: #fff;
+}
+
+.navbar-menu a {
+  color: #fff;
+  font-size: 15px;
+  margin-left: 30px;
+  transition: .3s linear;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-menu a:hover {
+  color: #12cad6;
+}
+
+#home {
+  height: 100vh;
+  background: url("../img/macbook.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+ /* filter: brightness(80%); */
+}
+
+#home .width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+
+  width: 100%;
+  color: #fff;
+}
+
+/*
+#home .content {
+
+}
+*/
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.content h1::after {
+  content: " developer";
+  animation: textanimation 10s linear infinite;
+}
+
+@keyframes textanimation {
+  50% {
+    content: " designer";
+  }
+}
+
+.icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: .3s;
+}
+
+.icons a:hover {
+  color:  #12cad6;
+}
+
+#home .buttons {
+  margin: 40px 20px;
+}
+
+#home .buttons a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border: 2px solid #12cad6;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: .3s;
+  background-color: #12cad6;
+  color: #222831;
+
+}
+
+#home .buttons a:hover {
+ background: transparent;
+ color: #fff;
+}
+
+section {
+  padding: 100px 0;
+  background-color: #f1f1f1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 70px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: black;
+  bottom: 0;
+  left: calc(50% - 40px);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background-color: #12cad6;
+  border: 3px solid #f1f1f1;
+  bottom: -5px;
+  left: calc(50% - 9px);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-pic {
+  width: 194px;
+  border-radius: 50%;
+  margin-right: 100px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  margin: 10px 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.about-text h3 span:first-child:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    border-radius: 50%;
+    margin: 0 14px;
+    display: inline-block;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+section.dark {
+  background-color: #353b48;
+}
+
+section.dark .section-title {
+  color: #f1f1f1;
+}
+
+section.dark .section-title::before {
+  background-color: #f1f1f1;
+}
+
+section.dark .section-title::after {
+  border: 4px solid #353b48;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service {
+  border: 1px solid #12cad6;
+  border-radius: 5px;
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: calc(50% - 20px);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.service .icon {
+  color: #12cad6;
+  font-size: 50px;
+  margin-bottom: 20px;
+  transition: .3s linear;
+}
+
+.service h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service:hover {
+  background-color: #12cad6;
+}
+
+.service:hover .icon {
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+  .menu-toggler {
+    display: block;
+  }
+
+  .navbar-menu {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    max-width: 300px;
+    background-color: #a6dcef;
+    right: 0;
+    top: 0;
+    padding: 100px 50px;
+    transition: .3s;
+
+  }
+
+  .navbar-menu a {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    margin: 30px 0;
+
+  }
+
+.sticky .navbar-menu {
+  background-color: #f1f1f1;
+}
+
+.navbar-menu.active{
+   right: 0;
+ }
+
+/* Toggler nejde zavřít */
+
+ .menu-toggler.active span:nth-child(1){
+   transform: rotate(-45deg);
+   top: 4px;
+ }
+
+ .menu-toggler.active span:nth-child(2){
+   opacity: 0;
+ }
+
+ .menu-toggler.active span:nth-child(3){
+   transform: rotate(45deg);
+   bottom: 14px;
+ }
+
+/* About section */
+.width {
+  max-width: 800px;
+}
+
+.about-pic {
+  margin: 0 auto 50px;
+}
+
+.about-text {
+  flex: 100%;
+  text-align: center;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .width {
+    padding: 0 20px;
+  }
+
+  .service {
+    width: 100%;
+  }
+}
